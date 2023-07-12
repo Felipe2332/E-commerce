@@ -1,0 +1,7 @@
+
+.container{
+    margin: 40px auto; /*40 px todo em volta centralizado*/
+    max-width: 1000px;/*Acima disso centraliza tudo e abaixo disso ocupa a tela inteira*/
+    padding: 0 40px;/*0 em cima e baixo 40px laterais*/
+}
+

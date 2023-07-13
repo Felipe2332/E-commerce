@@ -2,6 +2,7 @@ import Head from 'next/head'
 import NavBar from '@/components/navBar/navBar'
 import Subtitle from '@/components/tipography/subtitle/subtitle'
 import Container from '@/components/container/container'
+import SaleCard from '@/components/cards/saleCard/saleCard'
 
 
 export default function Home() {
@@ -15,9 +16,14 @@ export default function Home() {
       </Head>
       <div>
         <NavBar></NavBar>
+
+
         <Container>
           <div>
           <Subtitle>Promoções</Subtitle>
+          </div>
+          <div>
+            <SaleCard></SaleCard>
           </div>
 
         <div>

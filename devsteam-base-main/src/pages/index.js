@@ -1,8 +1,10 @@
 import Head from 'next/head'
+import styles from '@/styles/index.module.css'
 import NavBar from '@/components/navBar/navBar'
 import Subtitle from '@/components/tipography/subtitle/subtitle'
 import Container from '@/components/container/container'
 import SaleCard from '@/components/cards/saleCard/saleCard'
+import GameCard from '@/components/cards/gameCard/gameCard'
 
 
 export default function Home() {
@@ -14,23 +16,33 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+
       <div>
         <NavBar></NavBar>
-
-
         <Container>
-          <div>
+          <div className={styles.session}>
           <Subtitle>Promoções</Subtitle>
-          </div>
-          <div>
+          
+
+          <div className={styles.saleContainer}>
+            <SaleCard></SaleCard>
+            <SaleCard></SaleCard>
             <SaleCard></SaleCard>
           </div>
-
-        <div>
+          </div>
+          
+        <div className={styles.session}>
           <Subtitle>Outros jogos</Subtitle>
-        </div>
-        
+          <div className={styles.gameContainer}>
+            <GameCard/>
+            <GameCard/>
+            <GameCard/>
+            <GameCard/>
 
+
+          </div>
+        </div>
         </Container>
       </div>
     </>

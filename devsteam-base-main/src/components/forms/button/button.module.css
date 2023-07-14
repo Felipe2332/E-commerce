@@ -1,0 +1,21 @@
+
+.button{
+    
+    padding: 15px 5px;/*15 em cima e em baixo 5 laterais*/
+    border-radius: 10px;
+    background: #549300;
+    border: 0;
+    font-weight: 700;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: #355e00;
+}
+
+.fullWidth{
+    width: 100%;
+}

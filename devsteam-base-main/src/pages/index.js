@@ -26,9 +26,9 @@ export default function Home() {
           
 
           <div className={styles.saleContainer}>
-            <SaleCard></SaleCard>
-            <SaleCard></SaleCard>
-            <SaleCard></SaleCard>
+            <SaleCard image={'league-of-legends.jpg'} discount={'10%'} fullPrice={'99,90'} discountPrice={'89,90'}></SaleCard>
+            <SaleCard image={'valorant.jpg'} discount={'30%'} fullPrice={'250,00'} discountPrice={'175,00'}></SaleCard>
+            <SaleCard image={'dota-2.jpg' } discount={'40%'} fullPrice={'600,00'} discountPrice={'360,00'}></SaleCard>
           </div>
           </div>
           

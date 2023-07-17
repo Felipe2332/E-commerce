@@ -7,14 +7,14 @@ import Logo from '@/components/logo/logo'
 import Input from '../forms/input/input'
 import CartButton from '../forms/cartButton/cartButton'
 
-export default function NavBar(){
+export default function NavBar({cart,onRemove}){
     return(
     <nav className={styles.navBar}>
         <Logo/>
         <div className={styles.search}>
         <Input type="text" placeholder="Buscar" fullWidth/>
         </div>
-        <CartButton/>
+        <CartButton  cart ={cart} onRemove = {onRemove}/>
     </nav>
     )
     

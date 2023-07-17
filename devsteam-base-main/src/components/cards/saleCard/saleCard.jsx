@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Button from '@/components/forms/button/button'
 
 /*Existem parâmentros dentro dessa função que devem ser passados na página do Index*/
-export default function SaleCard({image,discount,fullPrice,discountPrice})
+export default function SaleCard({image,discount,fullPrice,discountPrice, onAdd})
 {
     return (
         <div className={styles.saleCard}>
@@ -18,7 +18,7 @@ export default function SaleCard({image,discount,fullPrice,discountPrice})
                         <h4 className={styles.discountPrice}>R$ {discountPrice}</h4>
                     </div>
                 </div>
-                <Button fullWidth={true}>Adicionar ao carrinho</Button>
+                <Button fullWidth={true} onClick = {onAdd}>Adicionar ao carrinho</Button>
             </div>
         </div>
     )

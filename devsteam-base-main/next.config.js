@@ -4,3 +4,8 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+module.exports = {
+  // ...
+  basePath: '/E-commerce',
+  assetPrefix: '/E-commerce/',
+};
